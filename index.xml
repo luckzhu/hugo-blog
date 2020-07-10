@@ -1,23 +1,192 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My New Hugo Site</title>
+    <title>Luckzhu Blog  - Success comes from devotion</title>
     <link>https://luckzhu.github.io/hugo-blog/</link>
-    <description>Recent content on My New Hugo Site</description>
+    <description>Recent content on Luckzhu Blog  - Success comes from devotion</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Thu, 09 Jul 2020 17:52:20 +0800</lastBuildDate>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 09 Jul 2020 10:55:23 +0800</lastBuildDate>
     
-	<atom:link href="https://luckzhu.github.io/hugo-blog/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://luckzhu.github.io/hugo-blog/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>My First Post</title>
-      <link>https://luckzhu.github.io/hugo-blog/posts/my-first-post/</link>
-      <pubDate>Thu, 09 Jul 2020 17:52:20 +0800</pubDate>
+      <title>About</title>
+      <link>https://luckzhu.github.io/hugo-blog/about/</link>
+      <pubDate>Sun, 20 Aug 2017 21:38:52 +0800</pubDate>
       
-      <guid>https://luckzhu.github.io/hugo-blog/posts/my-first-post/</guid>
-      <description>我的第一篇博客 </description>
+      <guid>https://luckzhu.github.io/hugo-blog/about/</guid>
+      
+        <description>&lt;p&gt;Hugo is a static site engine written in Go.&lt;/p&gt;
+&lt;p&gt;It makes use of a variety of open source projects including:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/cobra&#34;&gt;Cobra&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/viper&#34;&gt;Viper&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/jWalterWeatherman&#34;&gt;J Walter Weatherman&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/cast&#34;&gt;Cast&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Learn more and contribute on &lt;a href=&#34;https://github.com/gohugoio&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>使用hugo快速搭建个人博客</title>
+      <link>https://luckzhu.github.io/hugo-blog/post/%E4%BD%BF%E7%94%A8hugo%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</link>
+      <pubDate>Thu, 09 Jul 2020 10:55:23 +0800</pubDate>
+      
+      <guid>https://luckzhu.github.io/hugo-blog/post/%E4%BD%BF%E7%94%A8hugo%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</guid>
+      
+        <description>&lt;h2 id=&#34;下载安装-hugo&#34;&gt;下载安装 hugo&lt;/h2&gt;
+&lt;h3 id=&#34;windows-用户&#34;&gt;windows 用户&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;下载 hugo ，地址： &lt;a href=&#34;https://github.com/gohugoio/hugo/releases&#34;&gt;https://github.com/gohugoio/hugo/releases&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;解压文件，放到 &lt;code&gt;D:\Software\hugo\hugo.exe&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;添加环境变量：将 &lt;code&gt;D:\Software\hugo\&lt;/code&gt; 添加到PATH。
+&lt;ol&gt;
+&lt;li&gt;右键-我的电脑-属性&lt;/li&gt;
+&lt;li&gt;选择左侧 &lt;code&gt;高级系统设置&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;点击下方&lt;code&gt;环境变量&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;找到 &lt;code&gt;Path&lt;/code&gt;，双击或选中后点击编辑&lt;/li&gt;
+&lt;li&gt;点击 &lt;code&gt;新建&lt;/code&gt;，将&lt;code&gt;hugo&lt;/code&gt; 的安装目录复制进去&lt;/li&gt;
+&lt;li&gt;别忘了点&lt;code&gt;确定&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;重启命令行&lt;/li&gt;
+&lt;li&gt;输入 hugo version，如果出现 &lt;code&gt;Hugo Static Site Generator v0.73.0/extended windows/amd64 BuildDate: unknown&lt;/code&gt; 类似文字，
+则说明已经安装成功。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;基本配置&#34;&gt;基本配置&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;打开hugo官网的快速开始页面：https://gohugo.io/getting-started/quick-start&lt;/li&gt;
+&lt;li&gt;跟着教程开始做，由于第一步安装已完成，直接从第二步开始
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;hugo new site &#39;your folder&#39;&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;文件夹可以取你喜欢的名字&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;添加主题
+&lt;pre&gt;&lt;code&gt;cd &#39;your folder&#39;
+git init 
+git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke
+      
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;将主题添加到站点配置
+&lt;code&gt;echo &#39;theme = &amp;quot;ananke&amp;quot;&#39; &amp;gt;&amp;gt; config.toml&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;添加内容
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;hugo new posts/my-first-post.md&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;编辑这个md文件，新的文章内容应从以下内容开始：
+&lt;pre&gt;&lt;code&gt;---
+ title: &amp;quot;My First Post&amp;quot;
+ date: 2019-03-26T08:47:11+01:00
+ draft: true
+---
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;这里的 &lt;code&gt;draft&lt;/code&gt; 代表是否为草稿，如果你一会想看到这篇文章，请将其设为&lt;code&gt;false&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;启动服务
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;hugo server -D&lt;/code&gt; ，这时你将可以在 &lt;code&gt;http://localhost:1313/&lt;/code&gt; 预览你的博客站点&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;打包，生成静态页面
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;hugo -D&lt;/code&gt;，这时将生成一个&lt;code&gt;public&lt;/code&gt;文件夹，这就是我们的整个博客站点的文件了。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;部署博客到-github&#34;&gt;部署博客到 Github&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;首先在 Github 上创建一个仓库&lt;/li&gt;
+&lt;li&gt;进入 public 文件夹&lt;code&gt;cd public&lt;/code&gt;
+&lt;pre&gt;&lt;code&gt;git init
+git add .
+git commit -m &#39;first commit&#39;
+git remote add origin &#39;你的仓库地址&#39; 
+git push -f origin master
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;打开仓库的 settings&lt;/li&gt;
+&lt;li&gt;找到 &lt;code&gt;Github pages&lt;/code&gt;，将 &lt;code&gt;Source&lt;/code&gt; 改为 &lt;code&gt;master branch&lt;/code&gt;，然后会出来一个链接&lt;/li&gt;
+&lt;li&gt;复制形如这样的链接，&lt;code&gt;xxxxx.github.io/xxxxx/.&lt;/code&gt;，通过这个链接就可以访问博客了&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>如何实现一个简单的轮播效果</title>
+      <link>https://luckzhu.github.io/hugo-blog/post/%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84%E8%BD%AE%E6%92%AD%E6%95%88%E6%9E%9C/</link>
+      <pubDate>Mon, 07 Jan 2019 18:09:23 +0800</pubDate>
+      
+      <guid>https://luckzhu.github.io/hugo-blog/post/%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84%E8%BD%AE%E6%92%AD%E6%95%88%E6%9E%9C/</guid>
+      
+        <description>&lt;h2 id=&#34;轮播初实现&#34;&gt;轮播初实现&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;多张图片并排形成一张长图&lt;/li&gt;
+&lt;li&gt;显示窗口只有一张图片大小&lt;/li&gt;
+&lt;li&gt;点击后图片位置变化，达到轮播效果&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;初步显示&#34;&gt;初步显示&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt;标签引入多张图片，注意宽高要一致&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt;做显示窗口，&lt;code&gt;overflow: hidden;&lt;/code&gt; 隐藏其它未显示的图片&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;点击图片移动&#34;&gt;点击图片移动&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;原生JS，.addEventListener&lt;/li&gt;
+&lt;li&gt;用jQuery，$(selector).on(&amp;ldquo;click&amp;rdquo;,function(){})#鼠标点击后执行图片切换
+&lt;ul&gt;
+&lt;li&gt;如何确认是第几张？
+&lt;code&gt;$(x.currentTarget).index()&lt;/code&gt; 可得到点击元素在siblings中排第几&lt;/li&gt;
+&lt;li&gt;图片如何移动？假设图片宽度位300px
+比如点击第一张，&lt;code&gt;translateX&lt;/code&gt; 就变为0，点击第二张&lt;code&gt;translateX&lt;/code&gt;就变为 &lt;code&gt;-300px&lt;/code&gt;，
+那么点击第n张即变为 &lt;code&gt;n* -300&lt;/code&gt;，也就是&lt;code&gt;index * -300&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;如何让他自动轮播&#34;&gt;如何让他自动轮播？&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;让他自动触发&lt;code&gt;click&lt;/code&gt;事件&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;setInterval(function(){ }, 3000)&lt;/code&gt;，写成箭头函数即是：&lt;code&gt;setInterval(() =&amp;gt;{ }, 3000)&lt;/code&gt;
+* Tips: &lt;code&gt;setInterval()&lt;/code&gt; 方法会不停地调用函数，直到 &lt;code&gt;clearInterval()&lt;/code&gt; 被调用或窗口被关闭。如果只想调用一次，可以用 &lt;code&gt;setTimeout()&lt;/code&gt; 方法&lt;/li&gt;
+&lt;li&gt;自动选择图片，触发click。
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;$().eq(index).trigger(&#39;click&#39;)&lt;/code&gt;，这里的&lt;code&gt;index&lt;/code&gt;应改为&lt;code&gt;n=0，n+=1， n % images.length&lt;/code&gt;。即从1，2，3，4逐个开始&lt;/li&gt;
+&lt;li&gt;为什么不直接用1，2，3，4？为了不写死，无论多少张图片，代码都不用改。&lt;/li&gt;
+&lt;li&gt;若当前用户点击了第3张，轮播也应从第3张开始自动，而不是第一张开始？所以这里当用户手动点击过后，应当将此时的index赋值给n&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;当用户鼠标移上去后自动轮播应该相应停止&#34;&gt;当用户鼠标移上去后，自动轮播应该相应停止&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;$(.windows).on(&#39;mouseenter&#39;,function(){ window.clearInterval(timerId)} )&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;这里的 &lt;code&gt;.windows&lt;/code&gt; 是一个&lt;code&gt;css&lt;/code&gt;选择器，是指整个轮播对象&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;timerId&lt;/code&gt; 即为之前&lt;code&gt;setInterval()&lt;/code&gt;取得计时器名字&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;同样的当用户鼠标移出来之后自动轮播也应相应开始&#34;&gt;同样的，当用户鼠标移出来之后，自动轮播也应相应开始&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;$(.windows).on(&#39;mouseleave&#39;,function(){ timerId = setInterval(function(){ }, 3000) )&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;其他效果实现&#34;&gt;其他效果实现&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;当轮播到第几张时，第几张的标签就变成红色，即高亮。
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;.addClass(&#39;red&#39;)&lt;/code&gt; 给当前的标签增加 class&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;.siblings(&#39;.red&#39;).removeClass(&#39;red&#39;)&lt;/code&gt; 给当前标签的兄弟移除class&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;代码优化&#34;&gt;代码优化&lt;/h2&gt;
+&lt;p&gt;重复的地方 封装函数&lt;/p&gt;
+</description>
+      
     </item>
     
   </channel>

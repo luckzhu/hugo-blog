@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>前端 on Luckzhu Blog  - Success comes from devotion</title>
+    <link>https://luckzhu.github.io/hugo-blog/tags/%E5%89%8D%E7%AB%AF/</link>
+    <description>Recent content in 前端 on Luckzhu Blog  - Success comes from devotion</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 07 Jan 2019 18:09:23 +0800</lastBuildDate>
+    
+	<atom:link href="https://luckzhu.github.io/hugo-blog/tags/%E5%89%8D%E7%AB%AF/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>如何实现一个简单的轮播效果</title>
+      <link>https://luckzhu.github.io/hugo-blog/post/%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84%E8%BD%AE%E6%92%AD%E6%95%88%E6%9E%9C/</link>
+      <pubDate>Mon, 07 Jan 2019 18:09:23 +0800</pubDate>
+      
+      <guid>https://luckzhu.github.io/hugo-blog/post/%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84%E8%BD%AE%E6%92%AD%E6%95%88%E6%9E%9C/</guid>
+      <description>轮播初实现 多张图片并排形成一张长图 显示窗口只有一张图片大小 点击后图片位置变化，达到轮播效果 初步显示 &amp;lt;img&amp;gt;标签引入多张图片，注</description>
+    </item>
+    
+  </channel>
+</rss>
